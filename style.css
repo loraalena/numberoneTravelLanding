@@ -1,7 +1,7 @@
 /*первый слайд*/
 
 body {
-    margin: 0 0 0 80px;
+    margin: 0 0 0 5%;
 
 }
 
@@ -17,7 +17,7 @@ body {
 
 .fixedMainMenu {
     position: fixed;
-    width: 80px;
+    width: 5%;
     left: 0;
 }
 
@@ -25,9 +25,12 @@ body {
     text-align: center;
 }
 
-.fixedMainMenu ul {
+.social p{
+    margin: 100px 0 0 0;
+    padding: 0;
+    width: 130px;
+    display: inline-block;
     transform: rotate(270deg);
-    margin: 0;
 }
 
 .logo {
@@ -61,10 +64,6 @@ nav {
     list-style-type: none;
 }
 
-.listInStr li {
-    display: inline-block;
-}
-
 .listOfServices {
     width: 50%;
     margin-top: 10%;
@@ -74,7 +73,8 @@ nav {
     border-bottom: 1px solid azure;
     width: 25%;
     margin-right: 20px;
-
+    display: inline-block;
+    list-style-type: none;
 }
 
 .fixedButton {
@@ -95,9 +95,6 @@ nav {
 /*второй слайд*/
 
 
-body {
-    margin: 0 0 0 80px;
-}
 
 #secondSlide {
     background-image: linear-gradient( rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5) ), url("multimedia/secondBackground.jpg");
@@ -132,8 +129,8 @@ body {
     top: 0;
     left: 0;
     position: relative;
-    width: 80%;
-    height: auto;
+    width: 70%;
+    height: 90%;
     min-width: 50%;
     min-height: 100%;
 }
@@ -217,7 +214,7 @@ body {
     width: 100px;
 }
 
-.js-prev, .js-next{
+.js-prev, .js-next, .jsprev, .jsnext{
     font-size: 20px;
     margin: 0;
     background-color: #FFFFFF;

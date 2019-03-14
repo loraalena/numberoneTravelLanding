@@ -10,7 +10,15 @@ $(document).ready(function () {
     });
 
     var secondTypeOfCarousel = $(".carousel2");
+
     secondTypeOfCarousel.owlCarousel({
+        singleItem: true, // Показывать только 1 блок на всю ширину
+        pagination: false
+    });
+
+    var thirdTypeOfCarousel = $(".carousel3");
+
+    thirdTypeOfCarousel.owlCarousel({
         singleItem: true, // Показывать только 1 блок на всю ширину
         pagination: false
     });
@@ -23,6 +31,7 @@ $(document).ready(function () {
 
     repeatCarousel(firstTypeOfCarousel);
     repeatCarousel(secondTypeOfCarousel);
+    repeatCarousel(thirdTypeOfCarousel);
 
 
 
@@ -44,6 +53,25 @@ $(document).ready(function () {
         // Запускаем перемотку вправо
         secondTypeOfCarousel.trigger('owl.next');
 
+        return false;
+    });
+
+
+    $('.jsprev').click(function () {
+
+        // Запускаем перемотку влево
+
+        thirdTypeOfCarousel.trigger('owl.prev');
+        return false;
+    });
+
+// Вперед
+// При клике на "Вперед"
+    $('.jsnext').click(function () {
+
+        // Запускаем перемотку вправо
+
+        thirdTypeOfCarousel.trigger('owl.next');
         return false;
     });
 
