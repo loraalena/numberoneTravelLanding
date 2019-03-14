@@ -1,0 +1,245 @@
+/*первый слайд*/
+
+body {
+    margin: 0 0 0 80px;
+
+}
+
+#firstSlide {
+    background-image: linear-gradient( rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5) ), url("multimedia/firstBackground.jpeg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+
+}
+
+
+
+.fixedMainMenu {
+    position: fixed;
+    width: 80px;
+    left: 0;
+}
+
+.fixedMainMenu p {
+    text-align: center;
+}
+
+.fixedMainMenu ul {
+    transform: rotate(270deg);
+    margin: 0;
+}
+
+.logo {
+    width: 45%;
+    text-align: left;
+    display: inline-block;
+    margin: 40px 0 0 40px;
+}
+
+.logo h2 {
+    margin: 0;
+}
+
+.contact {
+    width: 45%;
+    text-align: right;
+    display: inline-block;
+    margin: 40px 40px 0 0;
+}
+
+nav {
+    width: 100%;
+}
+
+.headlines {
+    margin: 10% 0 0 40px;
+    width: 40%;
+}
+
+.removeMarkerForList {
+    list-style-type: none;
+}
+
+.listInStr li {
+    display: inline-block;
+}
+
+.listOfServices {
+    width: 50%;
+    margin-top: 10%;
+}
+
+.listOfServices li {
+    border-bottom: 1px solid azure;
+    width: 25%;
+    margin-right: 20px;
+
+}
+
+.fixedButton {
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+    padding: 20px;
+    background-color: mediumspringgreen;
+    color: azure;
+}
+
+
+.coloredAllTipicalColor {
+    color: mediumspringgreen;
+}
+
+
+/*второй слайд*/
+
+
+body {
+    margin: 0 0 0 80px;
+}
+
+#secondSlide {
+    background-image: linear-gradient( rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5) ), url("multimedia/secondBackground.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+.divInLine {
+    display: inline-block;
+    width: 45%;
+}
+
+
+
+.overlay {
+    width: 50%;
+    height: 100%;
+    display: block;
+}
+
+#nubexDiv {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+    display: inline-block;
+}
+
+#nubexVideo {
+    top: 0;
+    left: 0;
+    position: relative;
+    width: 80%;
+    height: auto;
+    min-width: 50%;
+    min-height: 100%;
+}
+
+.contentForVideo {
+    position: relative;
+    top: -40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.coloredBlocks {
+    background-color: gainsboro;
+    text-align: center;
+    width: 30%;
+    margin: 10px;
+}
+
+.textOnCenter {
+    text-align: center;
+}
+
+
+.contentForVideo p {
+    margin: 5%;
+}
+
+.changeSize{
+    font-size: 35px;
+}
+
+.changeSize i{
+    margin: 10px;
+}
+
+/*карусель*/
+
+.owl-pagination {
+    position: absolute;
+    top: 45%; left: 95%;
+    /*text-align: center; !* Выравниваем точки по-середине *!*/
+}
+/* 1 Точка */
+.owl-page {
+    width: 10px;
+    height: 10px;
+    border: 1px solid mediumspringgreen;
+    display: inline-block;
+    background: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+/* Активная точка */
+.owl-page.active {
+    background: mediumspringgreen;
+}
+
+/*конец карусели*/
+
+
+.carouselDiv{
+    display: inline-block;
+    width: 46%;
+    text-align: center;
+}
+
+.contentForCarousel{
+    display: inline-block;
+    width: 46%;
+    text-align: center;
+    vertical-align: top;
+    font-size: 50px;
+
+}
+
+.arrow{
+    /*position: relative;*/
+    /*top: -350px;*/
+    /*left: 210px;*/
+    width: 100px;
+}
+
+.js-prev, .js-next{
+    font-size: 20px;
+    margin: 0;
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+
+#thirdSlide h1{
+    text-align: center;
+    margin: 50px 0 50px 0;
+    font-size: 250%;
+}
+
+/*footer*/
+
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 70px 0 70px 0;
+    text-align: center;
+}
+
+footer{
+    background-color: #778899;
+}
