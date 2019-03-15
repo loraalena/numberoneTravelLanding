@@ -6,32 +6,45 @@ $(document).ready(function () {
     // Запускаем плагин карусели
     firstTypeOfCarousel.owlCarousel({
         singleItem: true, // Показывать только 1 блок на всю ширину
-        pagination: true
+        pagination: true,
+        //slideSpeed: 2000,
+        autoPlay: true
+
     });
+    // var carouselElement = $(".caroueselElement");
+    // carouselElement.addCssSpeed(2000);
+
 
     var secondTypeOfCarousel = $(".carousel2");
 
     secondTypeOfCarousel.owlCarousel({
         singleItem: true, // Показывать только 1 блок на всю ширину
-        pagination: false
+        pagination: false,
+        // slideSpeed: 3000,
+        autoPlay: true,
+
+
     });
 
     var thirdTypeOfCarousel = $(".carousel3");
 
     thirdTypeOfCarousel.owlCarousel({
         singleItem: true, // Показывать только 1 блок на всю ширину
-        pagination: false
+        pagination: false,
+        // slideSpeed: 3000,
+        autoPlay: true
+        // rewindSpeed: 2000
     });
 
-    function repeatCarousel(nameCarousel, sec){
-        setInterval(function() {
-            nameCarousel.trigger('owl.next');
-        }, sec);
-    }
-
-    repeatCarousel(firstTypeOfCarousel, 6000);
-    repeatCarousel(secondTypeOfCarousel, 4000);
-    repeatCarousel(thirdTypeOfCarousel,4000);
+    // function repeatCarousel(nameCarousel, sec){
+    //     setInterval(function() {
+    //         nameCarousel.fadeTo(1000).trigger('owl.next');
+    //     }, sec);
+    // }
+    //
+    // repeatCarousel(firstTypeOfCarousel, 6000);
+    // repeatCarousel(secondTypeOfCarousel, 4000);
+    // repeatCarousel(thirdTypeOfCarousel,4000);
 
 
 
