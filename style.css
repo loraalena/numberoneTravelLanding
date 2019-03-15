@@ -1,14 +1,13 @@
 /*первый слайд*/
 
 body {
-    margin: 0 0 0 5%;
+    margin: 0 0 0 80px;
     font-family: Verdana, sans-serif;
 }
 
 /*first slide*/
 
-
-#firstSlide {
+#whoWeAre {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(200, 200, 200, 0.6)), url("multimedia/firstBackground.jpeg");
     background-repeat: no-repeat;
     height: 100vh;
@@ -21,40 +20,38 @@ body {
     height: 100vh;
     background-color: #DCDCDC;
     position: fixed;
-    width: 5%;
+    width: 80px;
     left: 0;
     color: gray;
 }
 
-.social {
-    vertical-align: middle;
-}
-
-
-.menu {
+.fixedMainMenu .menu {
     color: black;
+    text-align: center;
 }
 
-.menu i {
+.fixedMainMenu .menu i {
     margin: 10px;
 }
 
-.social p {
+.fixedMainMenu .social p {
     margin: 0 10px 0 0;
     padding: 0;
+    display: inline-block;
 }
 
-.social i {
+.fixedMainMenu .social i {
     margin-right: 5px;
     font-size: 25px;
     vertical-align: middle;
 }
 
-.social {
+.fixedMainMenu .social {
+    vertical-align: middle;
     transform: rotate(270deg);
     position: fixed;
     top: 70%;
-    left: -8.3%;
+    left: -95px;
     opacity: 0.5;
 }
 
@@ -82,53 +79,53 @@ body {
 /*    padding: 20px;*/
 /*}*/
 
-.logo {
+#whoWeAre .logo {
     width: 45%;
     margin: 2% 0 0 3%;
+    display: inline-block;
+    text-align: left;
 }
 
-.logo h2 {
+#whoWeAre .logo h2 {
     margin: 0;
 }
 
-.contact {
+#whoWeAre .contact {
     width: 45%;
     text-align: right;
     margin: 2% 3% 0 0;
+    display: inline-block;
 }
 
-.contact a {
+#whoWeAre .contact a {
     text-decoration: none;
     color: white;
 }
 
-.contact a:hover {
+#whoWeAre .contact a:hover {
     color: mediumspringgreen;
 }
 
-nav {
-    width: 100%;
+#whoWeAre .contact ul{
+    list-style-type: none;
 }
 
-.headlines {
+#whoWeAre .description {
     margin: 7% 0 0 3%;
     width: 50%;
 }
 
-.removeMarkerForList {
+#whoWeAre .listOfServices {
+    width: 60%;
+    margin-top: 7%;
     list-style-type: none;
 }
 
-.listOfServices {
-    width: 60%;
-    margin-top: 7%;
-}
-
-.listOfServices li:hover {
+#whoWeAre .listOfServices li:hover {
     color: mediumspringgreen;
 }
 
-.listOfServices li {
+#whoWeAre .listOfServices li {
     border-bottom: 1px solid azure;
     width: 30%;
     margin: 1%;
@@ -136,13 +133,13 @@ nav {
     list-style-type: none;
 }
 
-.fixedButton {
+#whoWeAre .navigateToMain {
     position: absolute;
     bottom: 15px;
     left: 80%;
 }
 
-.fixedButton a {
+#whoWeAre .navigateToMain a {
     width: 98%;
     color: white;
     text-decoration: none;
@@ -151,48 +148,36 @@ nav {
     background-color: mediumspringgreen;
 }
 
-.coloredAllBasicColor {
-    color: mediumspringgreen;
-}
-
 
 /*for all*/
 
-.blockInLine {
-    display: inline-block;
-}
-
-.textOnCenter {
-    text-align: center;
-}
-
-.textOnLeft {
-    text-align: left;
+.basicColor {
+     color: mediumspringgreen;
 }
 
 /*второй слайд*/
 
 
-#secondSlide {
+#video {
     background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(200, 200, 200, 0.8));
     height: 100vh;
 }
 
-
-.overlay {
+#video .overlay {
     height: 100%;
-}
-
-#nubexDiv {
-    /*top: 0;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    /*position: relative;*/
     width: 45%;
+    display: inline-block;
 }
 
-#nubexVideo {
+/*#nubexDiv {*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    position: relative;*/
+/*}*/
+
+#video video {
     /*top: 0;*/
     /*left: 0;*/
     /*position: relative;*/
@@ -202,16 +187,18 @@ nav {
     min-height: 100%;
 }
 
-.contentForVideo {
+#video .contentForVideo {
     position: relative;
     top: -30%;
     bottom: 0;
     left: 0;
     right: 0;
     width: 45%;
+    display: inline-block;
+    text-align: left;
 }
 
-.coloredBlocks {
+#video .contentForVideo .cards {
     background-color: gainsboro;
     text-align: center;
     margin: 10px;
@@ -219,32 +206,35 @@ nav {
     height: 155px;
     opacity: 0.7;
     transition: all 0.3s ease;
+    display: inline-block;
 }
 
-.coloredBlocks:hover {
+#video .contentForVideo .cards:hover {
     opacity: 1;
     transform: scale(1.1);
     transition: all 0.3s ease;
 }
 
-.coloredBlocks p {
+#video .contentForVideo .cards p {
     font-size: 0.7em;
 }
 
-.setIndentsForParagraph {
+#video .contentForVideo .textOverCards p {
     margin: 5% 0 5% 0;
+    text-align: left;
 }
 
-.headLinesAndParagraph {
+#video .contentForVideo .textOverCards {
     width: 90%;
     margin: auto;
+    text-align: left;
 }
 
-.fontAwesomeInColoredBlock {
+#video .contentForVideo .cards .fontAwesomeInCards {
     font-size: 45px;
 }
 
-.fontAwesomeInColoredBlock i {
+#video .contentForVideo .cards .fontAwesomeInCards i {
     margin: 13% 0 5% 0;
 }
 
@@ -273,24 +263,30 @@ nav {
     background: mediumspringgreen;
 }
 
-.carouselDiv {
+
+
+main .carouselWrapper {
     width: 46%;
+    display: inline-block;
+    text-align: center;
 }
 
-.contentForCarousel {
+main .textNextToCarousel {
     width: 46%;
     vertical-align: top;
     font-size: 50px;
+    text-align: center;
+    display: inline-block;
 }
 
-.arrow {
+main .carouselWrapper .arrow {
     position: relative;
     left: 80%;
     top: -350px;
     width: 100px;
 }
 
-.js-prev, .js-next, .jsprev, .jsnext {
+main .js-prev, .js-next, .jsprev, .jsnext {
     font-size: 20px;
     margin: 0;
     background-color: #FFFFFF;
@@ -298,18 +294,20 @@ nav {
 }
 
 
-#thirdSlide h1 {
+main h1 {
     margin: 50px 0 50px 0;
     font-size: 250%;
+    text-align: center;
 }
 
 
 /*footer*/
 
-.flex-container {
+footer .flex-container {
     display: flex;
     justify-content: space-around;
     padding: 70px 0 70px 0;
+    text-align: center;
 }
 
 footer {

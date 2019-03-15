@@ -1,7 +1,7 @@
 
 $(document).ready(function () {
     // Находим блок карусели
-    var firstTypeOfCarousel = $("#carousel1");
+    var firstTypeOfCarousel = $("header .carousel");
 
     // Запускаем плагин карусели
     firstTypeOfCarousel.owlCarousel({
@@ -15,7 +15,7 @@ $(document).ready(function () {
     // carouselElement.addCssSpeed(2000);
 
 
-    var secondTypeOfCarousel = $(".carousel2");
+    var secondTypeOfCarousel = $("#gallery1 .carousel");
 
     secondTypeOfCarousel.owlCarousel({
         singleItem: true, // Показывать только 1 блок на всю ширину
@@ -26,7 +26,7 @@ $(document).ready(function () {
 
     });
 
-    var thirdTypeOfCarousel = $(".carousel3");
+    var thirdTypeOfCarousel = $("#gallery2 .carousel");
 
     thirdTypeOfCarousel.owlCarousel({
         singleItem: true, // Показывать только 1 блок на всю ширину
