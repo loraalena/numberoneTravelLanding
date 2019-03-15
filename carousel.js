@@ -23,15 +23,15 @@ $(document).ready(function () {
         pagination: false
     });
 
-    function repeatCarousel(nameCarousel){
+    function repeatCarousel(nameCarousel, sec){
         setInterval(function() {
             nameCarousel.trigger('owl.next');
-        }, 5000);
+        }, sec);
     }
 
-    repeatCarousel(firstTypeOfCarousel);
-    repeatCarousel(secondTypeOfCarousel);
-    repeatCarousel(thirdTypeOfCarousel);
+    repeatCarousel(firstTypeOfCarousel, 6000);
+    repeatCarousel(secondTypeOfCarousel, 4000);
+    repeatCarousel(thirdTypeOfCarousel,4000);
 
 
 
@@ -42,7 +42,7 @@ $(document).ready(function () {
 
         // Запускаем перемотку влево
         secondTypeOfCarousel.trigger('owl.prev');
-
+        thirdTypeOfCarousel.trigger('owl.prev');
         return false;
     });
 

@@ -2,42 +2,53 @@
 
 body {
     margin: 0 0 0 5%;
-
+    font-family: Verdana, sans-serif;
 }
 
+
 #firstSlide {
-    background-image: linear-gradient( rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5) ), url("multimedia/firstBackground.jpeg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.8)), url("multimedia/firstBackground.jpeg");
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;
-
+    color: white;
 }
 
 
-
 .fixedMainMenu {
+    height: 100vh;
+    background-color: #DCDCDC;
     position: fixed;
     width: 5%;
     left: 0;
+    color: gray;
 }
 
 .fixedMainMenu p {
     text-align: center;
 }
 
-.social p{
-    margin: 100px 0 0 0;
+.social p {
+    margin: 0 0 0 0;
     padding: 0;
-    width: 130px;
     display: inline-block;
-    transform: rotate(270deg);
 }
+
+.social{
+    transform: rotate(270deg);
+    position: fixed;
+    top: 70%;
+    left: -6.5%;
+    opacity: 0.5;
+}
+
+
 
 .logo {
     width: 45%;
     text-align: left;
     display: inline-block;
-    margin: 40px 0 0 40px;
+    margin: 2% 0 0 3%;
 }
 
 .logo h2 {
@@ -48,7 +59,16 @@ body {
     width: 45%;
     text-align: right;
     display: inline-block;
-    margin: 40px 40px 0 0;
+    margin: 2% 3% 0 0;
+}
+
+.contact a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact a:hover{
+    color: mediumspringgreen;
 }
 
 nav {
@@ -56,8 +76,8 @@ nav {
 }
 
 .headlines {
-    margin: 10% 0 0 40px;
-    width: 40%;
+    margin: 7% 0 0 3%;
+    width: 50%;
 }
 
 .removeMarkerForList {
@@ -65,29 +85,39 @@ nav {
 }
 
 .listOfServices {
-    width: 50%;
-    margin-top: 10%;
+    width: 60%;
+    margin-top: 7%;
+}
+
+.listOfServices li:hover{
+    color: mediumspringgreen;
 }
 
 .listOfServices li {
     border-bottom: 1px solid azure;
-    width: 25%;
-    margin-right: 20px;
+    width: 30%;
+    margin: 1%;
     display: inline-block;
     list-style-type: none;
 }
 
 .fixedButton {
     position: absolute;
-    bottom: 0;
+    bottom: 1.5%;
     left: 80%;
-    padding: 20px;
-    background-color: mediumspringgreen;
     color: azure;
 }
 
+.fixedButton a {
+    width: 98%;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: mediumspringgreen;
+}
 
-.coloredAllTipicalColor {
+.coloredAllBasicColor {
     color: mediumspringgreen;
 }
 
@@ -95,9 +125,8 @@ nav {
 /*второй слайд*/
 
 
-
 #secondSlide {
-    background-image: linear-gradient( rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5) ), url("multimedia/secondBackground.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5)), url("multimedia/secondBackground.jpg");
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;
@@ -108,12 +137,8 @@ nav {
     width: 45%;
 }
 
-
-
 .overlay {
-    width: 50%;
     height: 100%;
-    display: block;
 }
 
 #nubexDiv {
@@ -137,7 +162,7 @@ nav {
 
 .contentForVideo {
     position: relative;
-    top: -40%;
+    top: -30%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -146,7 +171,6 @@ nav {
 .coloredBlocks {
     background-color: gainsboro;
     text-align: center;
-    width: 30%;
     margin: 10px;
 }
 
@@ -159,11 +183,11 @@ nav {
     margin: 5%;
 }
 
-.changeSize{
+.changeSize {
     font-size: 35px;
 }
 
-.changeSize i{
+.changeSize i {
     margin: 10px;
 }
 
@@ -171,9 +195,11 @@ nav {
 
 .owl-pagination {
     position: absolute;
-    top: 45%; left: 95%;
+    top: 45%;
+    left: 92%;
     /*text-align: center; !* Выравниваем точки по-середине *!*/
 }
+
 /* 1 Точка */
 .owl-page {
     width: 10px;
@@ -184,21 +210,19 @@ nav {
     margin: 10px;
     border-radius: 5px;
 }
+
 /* Активная точка */
 .owl-page.active {
     background: mediumspringgreen;
 }
 
-/*конец карусели*/
-
-
-.carouselDiv{
+.carouselDiv {
     display: inline-block;
     width: 46%;
     text-align: center;
 }
 
-.contentForCarousel{
+.contentForCarousel {
     display: inline-block;
     width: 46%;
     text-align: center;
@@ -207,14 +231,17 @@ nav {
 
 }
 
-.arrow{
+.arrow {
+    position: relative;
+    left: 80%;
+    top: -350px;
     /*position: relative;*/
     /*top: -350px;*/
     /*left: 210px;*/
     width: 100px;
 }
 
-.js-prev, .js-next, .jsprev, .jsnext{
+.js-prev, .js-next, .jsprev, .jsnext {
     font-size: 20px;
     margin: 0;
     background-color: #FFFFFF;
@@ -222,7 +249,7 @@ nav {
 }
 
 
-#thirdSlide h1{
+#thirdSlide h1 {
     text-align: center;
     margin: 50px 0 50px 0;
     font-size: 250%;
@@ -230,13 +257,13 @@ nav {
 
 /*footer*/
 
-.flex-container{
+.flex-container {
     display: flex;
     justify-content: space-around;
     padding: 70px 0 70px 0;
     text-align: center;
 }
 
-footer{
+footer {
     background-color: #778899;
 }
