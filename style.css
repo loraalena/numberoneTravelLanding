@@ -1,20 +1,9 @@
-/*первый слайд*/
-
 body {
     margin: 0 0 0 80px;
     font-family: Verdana, sans-serif;
 }
 
-/*first slide*/
-
-#whoWeAre {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(200, 200, 200, 0.6)), url("multimedia/firstBackground.jpeg");
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-size: cover;
-    color: white;
-    background-attachment: fixed;
-}
+/* nav */
 
 .fixedMainMenu {
     height: 100vh;
@@ -34,6 +23,17 @@ body {
     margin: 10px;
 }
 
+.fixedMainMenu .social a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+}
+
+.fixedMainMenu .social a:hover {
+    color: black;
+    opacity: 1;
+}
+
 .fixedMainMenu .social p {
     margin: 0 10px 0 0;
     padding: 0;
@@ -51,33 +51,25 @@ body {
     transform: rotate(270deg);
     position: fixed;
     top: 70%;
-    left: -95px;
+    left: -97px;
     opacity: 0.5;
 }
 
 
-/*.social p {*/
-/*    margin: 0 10px 0 0;*/
-/*    padding: 0;*/
-/*    display: inline-block;*/
-/*}*/
+/* #whoWeAre */
 
-/*.social i{*/
-/*    margin-right: 5px;*/
-/*    font-size: 25px;*/
-/*    vertical-align: middle;*/
-/*}*/
+header{
+    font-size: 100%;
+}
 
-/*.social {*/
-/*    text-align: center;*/
-/*    width: 300px;*/
-/*    transform: rotate(270deg);*/
-/*    position: relative;*/
-/*    top: 60vh;*/
-/*    left: -18vh;*/
-/*    opacity: 0.5;*/
-/*    padding: 20px;*/
-/*}*/
+#whoWeAre {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(200, 200, 200, 0.6)), url("multimedia/firstBackground.jpeg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
 
 #whoWeAre .logo {
     width: 45%;
@@ -106,7 +98,7 @@ body {
     color: mediumspringgreen;
 }
 
-#whoWeAre .contact ul{
+#whoWeAre .contact ul {
     list-style-type: none;
 }
 
@@ -136,11 +128,11 @@ body {
 #whoWeAre .navigateToMain {
     position: absolute;
     bottom: 15px;
-    left: 80%;
+    left: 75%;
 }
 
 #whoWeAre .navigateToMain a {
-    width: 98%;
+    width: 100%;
     color: white;
     text-decoration: none;
     padding: 15px;
@@ -152,10 +144,11 @@ body {
 /*for all*/
 
 .basicColor {
-     color: mediumspringgreen;
+    color: mediumspringgreen;
 }
 
-/*второй слайд*/
+
+/* #video */
 
 
 #video {
@@ -169,14 +162,6 @@ body {
     display: inline-block;
 }
 
-/*#nubexDiv {*/
-/*    top: 0;*/
-/*    bottom: 0;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    position: relative;*/
-/*}*/
-
 #video video {
     /*top: 0;*/
     /*left: 0;*/
@@ -189,7 +174,7 @@ body {
 
 #video .contentForVideo {
     position: relative;
-    top: -30%;
+    top: -40%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -242,27 +227,65 @@ body {
 /*карусель*/
 
 
-.owl-pagination {
+.owl-dots {
     position: absolute;
+    left: 93%;
     top: 45%;
-    left: 92%;
 }
 
-/* 1 Точка */
-.owl-page {
-    width: 10px;
-    height: 10px;
-    border: 1px solid mediumspringgreen;
-    display: inline-block;
-    background: white;
-    margin: 10px;
-    border-radius: 5px;
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: mediumspringgreen !important;
 }
 
-.owl-page.active {
-    background: mediumspringgreen;
+.owl-nav {
+    position: absolute;
+    left: 88%;
+    top: 0;
 }
 
+.owl-nav .owl-prev span,
+.owl-nav .owl-next span {
+    font-size: 20px;
+    color: mediumspringgreen;
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next,
+.owl-theme .owl-dots .owl-dot {
+    outline: none;
+}
+
+.owl-nav {
+    background-color: #FFFFFF;
+    padding: 2px;
+    margin: 0 !important;
+}
+
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: #FFFFFF !important;
+}
+
+
+/*effects for first carousel*/
+
+.owl-carousel .owl-animated-in {
+    z-index: 4 !important;
+}
+
+.owl-carousel .owl-animated-out {
+    z-index: 0 !important;
+}
+
+.owl-item img {
+    width: 400px !important;
+    height: auto;
+    margin: auto;
+}
+
+
+/* main  */
 
 
 main .carouselWrapper {
@@ -279,25 +302,23 @@ main .textNextToCarousel {
     display: inline-block;
 }
 
-main .carouselWrapper .arrow {
-    position: relative;
-    left: 80%;
-    top: -350px;
-    width: 100px;
+main .textNextToCarousel p {
+    margin: 10% 0 20% 0;
 }
-
-main .js-prev, .js-next, .jsprev, .jsnext {
-    font-size: 20px;
-    margin: 0;
-    background-color: #FFFFFF;
-    padding: 10px;
-}
-
 
 main h1 {
     margin: 50px 0 50px 0;
     font-size: 250%;
     text-align: center;
+}
+
+main img {
+    width: 80%;
+    height: 90%;
+}
+
+#gallery2 {
+    margin-bottom: 5%;
 }
 
 
@@ -313,3 +334,4 @@ footer .flex-container {
 footer {
     background-color: #778899;
 }
+
