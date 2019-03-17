@@ -3,7 +3,7 @@ $(document).ready(function () {
     owl.owlCarousel({
         items: 1,
         autoplay: true,
-        autoplayTimeout: 6000,
+        autoplayTimeout: 10000,
         animateOut: 'bounceOutDown',
         animateIn: 'flipInX',
         smartSpeed: 1000,
@@ -15,7 +15,7 @@ $(document).ready(function () {
     owl1.owlCarousel({
         items: 1,
         autoplay: true,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 6000,
         animateOut: 'flipOutY',
         animateIn: 'flipInX',
         smartSpeed: 1000,
