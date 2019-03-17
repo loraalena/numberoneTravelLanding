@@ -1,0 +1,23 @@
+{
+  "name": "travel-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "carousel2.js",
+  "dependencies": {
+    "owl.carousel": "^2.3.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loraalena/numberoneTravelLanding.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loraalena/numberoneTravelLanding/issues"
+  },
+  "homepage": "https://github.com/loraalena/numberoneTravelLanding#readme"
+}
