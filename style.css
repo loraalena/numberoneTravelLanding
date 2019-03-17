@@ -56,6 +56,12 @@ body {
 }
 
 
+.fixedMainMenu .menu a{
+    text-decoration: none;
+    color: black;
+}
+
+
 /* #whoWeAre */
 
 header{
@@ -271,7 +277,7 @@ header{
 /*effects for first carousel*/
 
 .owl-carousel .owl-animated-in {
-    z-index: 4 !important;
+    z-index: 1 !important;
 }
 
 .owl-carousel .owl-animated-out {
