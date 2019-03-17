@@ -2,7 +2,7 @@
   "name": "travel-landing",
   "version": "1.0.0",
   "description": "",
-  "main": "carousel2.js",
+  "main": "app.js",
   "dependencies": {
     "owl.carousel": "^2.3.4"
   },
